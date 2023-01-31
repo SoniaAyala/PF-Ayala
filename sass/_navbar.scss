@@ -1,0 +1,39 @@
+.header {
+    position: fixed;
+    z-index: 100;
+}
+
+nav ul{ 
+    list-style-type: none;
+    padding: 10px;
+    font-family:'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.nav-item:hover{ 
+    background: $background;
+    background-color: $background;
+    background-image: linear-gradient(194deg, rgba(127,209,244,1) 0%, rgba(245,150,193,1) 100%);
+    border-radius: 10em;
+}
+
+.rose {
+    background-color: $bkgdcolor;
+}
+
+header .navbar-toggler.collapsed svg {
+    transition: transform 0.5s;
+    transform: rotate(180deg);
+}
+
+.navbar-toggler.collapsed {
+    @include sizes (100%,2em);
+    border: 0.5px solid #FFFFFF;
+    transition: all 0.5s;
+}
+
+header .navbar-toggler {
+    @include sizes (100%,2em);
+    transition: all 0.5s;
+    border: 0.5px solid #FFFFFF;
+}

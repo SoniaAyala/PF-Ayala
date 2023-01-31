@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="UX/UI, aplicaciones, web, mobile, desarrollo, HTML, CSS, SASS">
+    <meta name="description" content="Soy diseñadora UX/UI y actualmente estudiante de desarrollo web. Interesada en aprender cada día más sobre el mundo UX/UI.">
+
+    <!-- Estilos CSS y bootstrap -->
+    <link rel="shortcut icon" href="./img/favicon.webp" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title> Sonia Mabel Ayala - CV | Portfolio</title>
 </head>
 
@@ -15,7 +21,7 @@
         <nav class="navbar navbar-expand-lg navbar-light rose">
             <div class="container-fluid">
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#FAACA8" class="bi bi-caret-down" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#f596c1" class="bi bi-caret-down" viewBox="0 0 16 16">
                         <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"></path>
                     </svg>
                 </button>
@@ -43,7 +49,7 @@
     </header>
 
     <section class="container-fluid">
-        <div class="row white-card">
+        <div class="row white-card" data-aos="zoom-in-down">
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <img class="img-fluid sonia-img " src="./img/sonia.webp" alt="mujer de pelo largo en un campo">
             </div>
@@ -73,6 +79,10 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body> 
 </html>

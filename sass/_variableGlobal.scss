@@ -1,0 +1,8 @@
+$color: black; 
+$bkgdcolor: #ffffff;
+$background: #f596c1;
+
+@mixin sizes ($width , $height) { 
+    height: $height;
+    width: $width;
+}

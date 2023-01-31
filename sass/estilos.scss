@@ -1,67 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+@import "variableGlobal";
+@import "general";
+@import "navbar";
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-body {
-    background-color: #FAACA8;
-    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.header {
-    position: fixed;
-    z-index: 100;
-}
-
-nav ul{ 
-    list-style-type: none;
-    padding: 10px;
-    font-family:'Poppins', sans-serif;
-    overflow: hidden;
-}
-
-.nav-item:hover{ 
-    background: #FAACA8;
-    background-color: #FAACA8;
-    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
-    border-radius: 10em;
-}
-
-.rose {
-    background-color: #ffffff;
-}
-
-h2 { 
-    color: black;
-    padding: 30px;
+h2 {
+    color: $color;
+    padding: 15px;
     text-align: start;
     font-style: normal;
     font-family:'Poppins', sans-serif;
     margin-top: 0;
     margin-bottom: 1rem;
+    margin-left: -15px;
 }
 
 .presentation {
     font-family:'Poppins', sans-serif;
     font-style: normal;
     font-size: 15px;
+    padding-left: -30x;
     margin-top: 0;
     margin-bottom: 1rem;
-    margin-left: 2rem;
+    margin-left: 5px;
     text-align: start;
 }
 
 .white-card{
-    background-color: #FFFFFF;
+    background-color: $bkgdcolor;
     border-radius: 50px;
     padding: 2em;
     margin: 5em 10em 5em 10em;
@@ -70,20 +34,24 @@ h2 {
     box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 30%);
 }
 
-.white-card-tools{
-    background-color: #FFFFFF;
+.white-card-tools {
+    background-color: $bkgdcolor;
     border-radius: 50px;
     padding: 2em;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    @include sizes (300px,300px);
     display: inline-block;
     text-align: center;
     -webkit-box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 30%);
     box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 30%);
+    
+    .design, .programacion{
+        font-family:'Poppins', sans-serif;
+    }
+
 }
 
 .card-projects {
@@ -97,12 +65,12 @@ h2 {
     overflow: hidden;
     cursor: default;
     transition: all 700ms ease;
-}
 
-.card1:hover, .card2:hover, .card3:hover {
-    -webkit-box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 30%);
-    box-shadow: 5px 5px 20px 0px rgb(0 0 0 / 30%);
-    transform:translateY(-5%)
+    &:hover {
+        -webkit-box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 30%);
+        box-shadow: 5px 5px 20px 0px rgb(0 0 0 / 30%);
+        transform:translateY(-5%)
+    }
 }
 
 .card-body {
@@ -110,7 +78,7 @@ h2 {
 }
 
 .second-title {
-    color: black;
+    color: $color;
     text-align: center;
     padding: 10px;
     margin: 50px 70px 50px 80px;
@@ -130,18 +98,12 @@ h2 {
     margin-top: 90px;
 }
 
-.design, .programacion {
-    font-family:'Poppins', sans-serif;
-}
-
 .tool-icon {
-    width: 75px;
-    height: 50px;
+    @include sizes (74px,50px);
 }
 
 .memo, .banco, .second {
-    width: 350px;
-    height: 280px;
+    @include sizes (350px , 280px);
     margin-right: 15px;
     margin-left: -15px;
 }
@@ -154,13 +116,11 @@ h2 {
 }
 
 .linkedin1 {
-    width: 90x;
-    height: 100px;
+    @include sizes (100px,100px);
 }
 
 .gmail {
-    width: 7em;
-    height: 5.5em;
+    @include sizes (7em,5.5em);
 }
 
 .social-networks-list{
@@ -169,50 +129,24 @@ h2 {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+
+    li {
+        margin: 2em;
 }
 
-.social-networks-list li {
-    margin: 2em;
 }
 
 li {
     display: list-item;
-    text-align: -webkit-match-parent;
-}
-
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
 }
 
 .behance, .linkedin {
-    width: 50px;
-    height: 50px;
+    @include sizes (50px,50px);
     margin: auto;
 }
 
-header .navbar-toggler.collapsed svg {
-    transition: transform 0.5s;
-    transform: rotate(180deg);
-}
-
-.navbar-toggler.collapsed {
-    width: 100%;
-    height: 2em;
-    border: 0.5px solid #FFFFFF;
-    transition: all 0.5s;
-}
-
-header .navbar-toggler {
-    width: 100%;
-    height: 2em;
-    transition: all 0.5s;
-    border: 0.5px solid #FFFFFF;
-}
-
-
 footer {
-    background-color: #ffffff;
+    background-color: $bkgdcolor;
     padding: 1em 0;
     margin-top: auto;
 }
