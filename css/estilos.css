@@ -108,7 +108,7 @@ h2 {
 .presentation {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-size: 16px;
+  font-size: 15px;
   padding-left: -30x;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -116,6 +116,38 @@ h2 {
   text-align: start;
 }
 
+@media (min-width: 500px) {
+  h2 {
+    font-size: 32px;
+  }
+  .presentation {
+    font-size: 17px;
+  }
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 33px;
+  }
+  .presentation {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 34px;
+  }
+  .presentation {
+    font-size: 19px;
+  }
+}
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 35px;
+  }
+  .presentation {
+    font-size: 20px;
+  }
+}
 .white-card {
   background-color: #ffffff;
   border-radius: 50px;
@@ -174,7 +206,6 @@ h2 {
 
 .sonia-img {
   border-radius: 50%;
-  margin-left: auto;
 }
 
 @media screen and (min-width: 500px) {
@@ -184,10 +215,15 @@ h2 {
 }
 @media screen and (min-width: 768px) {
   .sonia-img {
-    width: 500px;
+    width: 500x;
   }
 }
 @media screen and (min-width: 1024px) {
+  .sonia-img {
+    width: 550px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .sonia-img {
     width: 600px;
   }
